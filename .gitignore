@@ -1,0 +1,103 @@
+# TerraScope Android Repository .gitignore
+# This repository contains documentation and releases ONLY, not source code
+
+# ========================================
+# CRITICAL: Never Commit These
+# ========================================
+
+# Android Source Code (NEVER commit)
+*.kt
+*.java
+*.gradle
+*.xml
+*.json
+*.pro
+*.properties
+
+# Flutter/Dart Source Code (NEVER commit)
+*.dart
+pubspec.yaml
+pubspec.lock
+*.g.dart
+*.freezed.dart
+*.iml
+
+# Credentials & Secrets (NEVER commit)
+*.pem
+*.p12
+*.jks
+*.keystore
+*-key.json
+service-account*.json
+google-services.json
+.env
+.env.*
+secrets/
+credentials/
+
+# API Keys & Config (NEVER commit)
+firebase.json
+.firebaserc
+supabase/
+.supabase/
+
+# Build Outputs (NEVER commit - use GitHub Releases instead)
+*.apk
+*.aab
+*.ipa
+*.so
+*.dll
+*.exe
+
+# IDE & Editor Files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs & Temporary Files
+*.log
+*.tmp
+*.temp
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node Modules (if any)
+node_modules/
+.npm/
+
+# Python (if scripts added)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+
+# Backup Files
+*.bak
+*.backup
+*~
+
+# ========================================
+# Repository-Specific Allows
+# ========================================
+
+# These ARE allowed in this documentation repo:
+!README.md
+!docs/**/*.md
+!assets/**/*.png
+!assets/**/*.jpg
+!assets/**/*.jpeg
+!assets/**/*.svg
+!assets/**/*.gif
+!RELEASE_NOTES.md
+!.gitignore
+
+# Keep directory structure
+!**/
